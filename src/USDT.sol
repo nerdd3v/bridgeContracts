@@ -7,4 +7,8 @@ contract USDT is ERC20{
     constructor(string memory name, string memory symbol) ERC20(name, symbol){
 
     }
+
+    function mint(uint256 _amount)public {
+        _mint(address(this), _amount);
+    }
 }
